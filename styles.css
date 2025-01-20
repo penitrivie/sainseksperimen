@@ -1,0 +1,126 @@
+
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg5.jpg'); /* Ganti dengan URL gambar latar belakang Anda */
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: right;
+            color: white; /* Mengubah warna teks menjadi putih agar kontras dengan latar belakang */
+            text-align: center;
+        }
+
+        header {
+            position: sticky; /* Membuat header tetap terlihat saat scroll */
+            top: 0; /* Jarak dari atas jendela */
+            background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang header dengan transparansi */
+            color: #00ffff;
+            padding: 10px 10px;
+            border-bottom: 1px solid #00ffff;
+            z-index: 1000; /* Pastikan header di atas konten lainnya */
+        }
+
+        h2 {
+            color: #00ffff;
+        }
+
+main {
+    padding-top: 70px; /* Add padding to prevent overlap with fixed header */
+}
+
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+         nav a {
+            color: white; /* Ubah warna tulisan link menjadi putih */
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+        }
+
+        nav a:hover {
+            color:  #00ffff; /* Ubah warna tulisan link saat hover menjadi oranye */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10rem 7% 1.4rem;
+            border-radius: 8px;
+        }
+
+
+        img {
+            max-width: 150%;
+            height: auto;
+            border-radius: 5px; /* Sudut melengkung untuk gambar */
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+        
+
+      .flex-container {
+    display: flex;
+    justify-content: center; /* Mengatur posisi gambar ke tengah */
+    flex-wrap: wrap; /* Membuat gambar berpindah ke baris berikutnya jika ruang tidak cukup */
+}
+
+.flex-container div {
+    text-align: justify; /* Memastikan teks di bawah gambar terpusat */
+    margin: 20px; /* Beri jarak antar elemen */
+    flex: 1 1 200px; /* Membuat elemen fleksibel dengan lebar minimum 200px */
+}
+
+.flex-container img {
+    max-width: 100%; /* Memastikan gambar responsif */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    border-radius: 5px; /* Sudut melengkung untuk gambar */
+}
+
+.flex-container video {
+    max-width: 100%; /* Memastikan gambar responsif */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    border-radius: 5px; /* Sudut melengkung untuk gambar */
+}
+
+
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html{
+        font-size: 100%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html{
+        font-size: 80.5%;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html{
+        font-size: 80%;
+    }
+}
+
+
